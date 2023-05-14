@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        header{
-            width: 100%;
-            height: 50px;
-            background-color: antiquewhite;
-            top: 0;
-            padding: 10px;
-        }
-        #navLogo{
-            border-radius: 50%;
-            width: 50px;
-            display: inline-block;
-            float: left;
-        }
-        
-        nav ul li a{
-            text-decoration: none;
-            list-style: none;
-            color: black;   
-            align-items: center;
-        }
-        nav ul li{
-            align-items: center;
-            margin:  auto;
-            padding: 0 5px;
-        }
-        nav ul{
-            list-style-type: none;
-            display: flex;
-            /* justify-content: space-evenly; */
-            align-items: center;
-            /* top: ; */
-            border: 1px solid red;
-            width: 30vw;
-            height: 20px;
-        }
+  <head>
+    <meta charset="UTF=8" />
+    <title>Portfolio_Abir</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="logo.jpg" alt="personImage" id="navLogo">
-        </div>
-        <nav>
+  <body>
+    <header id="header">
+      <nav id="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects">Works</a></li>
+          <li><a href="#pro">Contact</a></li> 
         </ul>
-    </nav>
-    </header>
-</body>
+      </nav>
+      </header>
+      <section id="welcome-section">
+        <h1>Hey I am Abir</h1>
+        <p id="headdesc"><i>a beginner web developer</i></p>
+      </section>
+      <section id="projects">
+        <h1 id="project-heading">Here are some of my projects</h1>
+        <div class="project-section">
+          <div class="project project-tile">
+            <a target="_blank" href="https://tributepage.abir446.repl.co">
+            <figure><img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+              </figure>
+              <figcaption class="project-title">Tribute Page</figcaption>
+            </a>
+          </div>
+          <div class="project project-tile">
+            <a target="_blank" href="https://facebook.abir446.repl.co">
+            <figure><img class="project-image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PEJu4F6gOJ3dL8RI2NW99AHaHC%26pid%3DApi&f=1&ipt=0bb32db76e1173b7bf70f8a6fd899e8e01d51ffe14a946b82892d0113c51d5ea&ipo=images" alt="project">
+              </figure>
+              <figcaption class="project-title">Facebook Log in Page</figcaption>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="pro" class="profile">
+        <h1 project-heading>Let's work together</h1>
+        <p>Contact me</p>
+        <div class="links">
+          <ul >
+            <li><a target="_blank" id="profile-link" href="https://www.linkedin.com/in/abir-dutta-a30b22251/">Linked In</a></li>
+            <li><a target="_blank"  id="profile-link"href="https://github.com/abir446">GitHub</a></li>
+            <li><a target="_blank" id="profile-link" href="https://www.codechef.com/users/abirdutta390">Codechef</a></li>
+          </ul>
+        </div>
+      </section>
+  <footer>
+    <p>This is a practice porfolio which I learned in freeCodeCamp certification Program</p>
+    <p>Abir Dutta</p>
+  </footer>
+  </body>
 </html>
